@@ -1,1 +1,17 @@
- 
+# Node.js
+Node.js/node_modules/
+Node.js/.env
+
+# Python/Flask
+Flask/__pycache__/
+Flask/*.pyc
+Flask/venv/
+Flask/.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db 
