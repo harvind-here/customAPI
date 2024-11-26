@@ -4,6 +4,7 @@ A RESTful API for generating, validating, and redeeming time-bound discount coup
 
 ## Directory Structure
 
+```
 customAPI/
 ├── Node.js/
 │ ├── src/
@@ -33,7 +34,7 @@ customAPI/
 ├── validators.py
 ├── .env
 └── requirements.txt
-
+```
 
 ## Features
 
@@ -84,6 +85,7 @@ npm run dev
 ```
 
 ### Flask Implementation
+![Screenshot 2024-11-26 234104](https://github.com/user-attachments/assets/f9330a70-688d-435c-8fce-1b1a89d5b19e)
 
 1. Navigate to Flask directory:
 ```bash
@@ -150,9 +152,7 @@ Content-Type: application/json
 ## Database Schema
 
 ### Coupons Table
-
-
+![Screenshot 2024-11-26 234040](https://github.com/user-attachments/assets/4536abdd-152c-40fb-8acb-d1d334a0b87a)
 
 ### API Logs Table
-
-
+![Screenshot 2024-11-27 002448](https://github.com/user-attachments/assets/0799c796-d67f-46bc-88f7-19792869a5ba)
