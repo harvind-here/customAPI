@@ -2,7 +2,7 @@
 A RESTful API for generating, validating, and redeeming time-bound discount coupons. Implemented in both Node.js/Express and Flask.
 
 ## Skills
-<img src="https://img.shields.io/badge/Flask-3776AB?style=flat-square&logo=Flask&logoColor=white" alt="Flask"> <img src="https://img.shields.io/badge/NodeJS-3776AB?style=flat-square&logo=Flask&logoColor=white" alt="Node.js"> <img src="https://img.shields.io/badge/Flask-3776AB?style=flat-square&logo=PostgreSQL&logoColor=white" alt="PostgreSQL">
+<img src="https://img.shields.io/badge/Flask-3776AB?style=flat-square&logo=Flask&logoColor=white" alt="Flask"> <img src="https://img.shields.io/badge/NodeJS-3776AB?style=flat-square&logo=NodeJS&logoColor=white" alt="Node.js"> <img src="https://img.shields.io/badge/PostgreSQL-3776AB?style=flat-square&logo=PostgreSQL&logoColor=white" alt="PostgreSQL">
 
 ```
 customAPI/
