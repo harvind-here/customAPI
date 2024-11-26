@@ -8,16 +8,12 @@ const errorHandler = require('./middleware/errorHandler');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
 app.use(express.json());
 
-// Routes
 app.use('/api', couponRoutes);
 
-// Error handling
 app.use(errorHandler);
 
-// Initialize database and start server
 const start = async () => {
   try {
     await initDatabase();
