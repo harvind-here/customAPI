@@ -1,0 +1,19 @@
+{
+  "name": "coupon-api",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "npx nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "uuid": "^8.3.2",
+    "dotenv": "^10.0.0",
+    "express-rate-limit": "^5.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+} 
