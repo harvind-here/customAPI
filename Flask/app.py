@@ -11,7 +11,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
-# Database configuration
+
 password = quote_plus(os.getenv('POSTGRES_PASSWORD'))
 app.config['SQLALCHEMY_DATABASE_URI'] = (
     f"postgresql://{os.getenv('POSTGRES_USER')}:{password}"
@@ -19,20 +19,16 @@ app.config['SQLALCHEMY_DATABASE_URI'] = (
 )
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# Initialize database
 db.init_app(app)
 
-# Rate limiter
 limiter = Limiter(
     app=app,
     key_func=get_remote_address,
     default_limits=["100 per 15 minutes"]
 )
 
-# Register blueprints
 app.register_blueprint(coupon_bp, url_prefix='/api')
 
-# Root route
 @app.route('/')
 def home():
     return jsonify({
@@ -44,7 +40,6 @@ def home():
         }
     })
 
-# Error handler
 @app.errorhandler(Exception)
 def handle_error(error):
     print(f"Error: {str(error)}")
